@@ -9,18 +9,26 @@
 body, html {
     margin: 0;
     background-color: #f9faf8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .title {
     text-align: center;
     font-size: 3rem;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    margin: 0;
 }
 
-main {
+.main-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    gap: 1rem;
+}
+
+.message-box {
+    font-size: 1.5em;
+    font-weight: 600;
+    height: 1.5rem;
 }
 
 .board-grid {
@@ -38,6 +46,24 @@ main {
     justify-content: center;
 }
 
+.cell:hover {
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+}
+
 .marker {
 font-size: 3rem;
+}
+
+.restart {
+    all: unset;
+    border: 1px solid #000000;
+    padding: 1rem 2rem;
+    font-size: 1.5em;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+.restart:hover {
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
 }
