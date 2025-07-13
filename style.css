@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+/* @font-face {
+    font-fam
+} */
+
+body, html {
+    margin: 0;
+    background-color: #f9faf8;
+}
+.title {
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.board-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    border: 2px solid #000000;
+}
+
+.cell {
+    border: 2px solid #000000;
+    height: 150px;
+}
+
+.marker {
+    
+}
